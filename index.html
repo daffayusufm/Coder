@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h1>
+        Form Registration
+    </h1>
+    <form action="/action_page.php"" method="POST">
+        <fieldset>
+            <table>
+                <legend>Biodata</legend>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Nama Anda"></td>
+                </tr>
+                <tr>
+                    <td>No Induk Mahasiswa (NIM)</td>
+                    <td>:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Alamat Mahasiswa</td>
+                    <td>:</td> 
+                    <td><textarea name="message" rows="7" cols="30" placeholder="Alamat Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><input type="date"></td> <!--Untuk Tabel alamat kurang besar-->
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><input type="radio" name="Jk">Laki-laki
+                        <input type="radio" name="Jk">Perempuan
+                    </td> <!--Untuk Topsi tidak bisa di close-->
+                </tr>
+                <tr>
+                    <td>Upload Foto</td>
+                    <td>:</td>
+                    <td><input type="File" id="myfile" name="myfile"></td>
+                </tr>
+                <tr>
+                    <td>URL Website</td>
+                    <td>:</td>
+                    <td><input type="url" id="homepage" name="homepage" size="30" placeholder="URL Website Anda"></td>
+                </tr>
+                <tr>
+                    <td>Peruguruan Tinggi</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </fieldset>
+    <br><br>
+        <fieldset>
+            <table>
+                <legend>Info Akun</legend>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" placeholder="Email Anda"></td>
+                </tr>
+                <tr>
+                    <td>Ussername</td>
+                    <td>:</td>
+                    <td><input type="text"  placeholder="Ussername Anda"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" placeholder="Password Anda"></td>
+                </tr>
+                <tr>
+                    <td>Ulangi Password</td>
+                    <td>:</td>
+                    <td><input type="password" placeholder="Password Anda"></td>
+                </tr>
+            </table>
+        </fieldset>
+    <br><br>
+        <fieldset>
+            <table>
+                <legend>Kemampuan Dasar</legend>
+                <tr>
+                    <td><input type="checkbox" id="html" name="cb1" value="htmll"> HTML</td>
+                    <td><input type="checkbox" id="CSS" name="cb2" value="htmll"> CSS</td>
+                    <td><input type="checkbox" id="Java Script" name="cb3" value="htmll"> JavaScript</td>
+                    <td><input type="checkbox" id="PHP" name="cb4" value="htmll"> PHP</td>
+                    <td><input type="checkbox" id="MySQL" name="cb5" value="htmll"> MySQL</td>
+                    <td><input type="checkbox" id="Laravel" name="cb6" value="htmll"> Laravel</td>
+                    <td><input type="checkbox" id="React Native" name="cb7" value="htmll"> React Native</td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <input type="Reset" value="Reset">
+        <input type="Submit" value="Simpan">
+        <input type="Button" value="Button">
+    </form>
+    <br>
+</body>
+</html>
